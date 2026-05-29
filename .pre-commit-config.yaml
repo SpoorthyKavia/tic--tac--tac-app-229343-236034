@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: end-of-file-fixer
       - id: trailing-whitespace
@@ -10,18 +10,18 @@ repos:
       - id: check-case-conflict
 
   - repo: https://github.com/adrienverge/yamllint
-    rev: v1.37.1
+    rev: v1.38.0
     hooks:
       - id: yamllint
         args: [-c, .yamllint.yaml]
 
   - repo: https://github.com/executablebooks/mdformat
-    rev: 0.7.22
+    rev: 1.0.0
     hooks:
       - id: mdformat
         additional_dependencies:
-          - mdformat-gfm==0.4.1
-          - mdformat-frontmatter==2.0.8
+          - mdformat-gfm==1.0.0
+          - mdformat-frontmatter==2.1.2
         args:
           - --wrap=keep
           - --number
