@@ -1,0 +1,22 @@
+# yamllint configuration used by pre-commit hook.
+# Keep rules relatively strict but sane for a mixed-content repo.
+extends: default
+
+rules:
+  # Many repos use 2-space indentation for YAML.
+  indentation:
+    spaces: 2
+    indent-sequences: consistent
+
+  # Allow longer lines; markdown/docs URLs can be long.
+  line-length:
+    max: 160
+    allow-non-breakable-words: true
+    allow-non-breakable-inline-mappings: true
+
+  # pre-commit already enforces this, but keep it explicit.
+  trailing-spaces: enable
+  new-line-at-end-of-file: enable
+
+  # Relax some defaults that can be noisy.
+  truthy: disable
