@@ -1,0 +1,17 @@
+Static analysis run summary
+===========================
+
+Tool: pre-commit
+Command: pre-commit run --all-files
+Date: 2026-05-29
+
+Hook results:
+- fix end of files: Passed
+- trim trailing whitespace: Passed
+- check yaml: Passed
+- check for merge conflicts: Passed
+- check for case conflicts: Passed
+- yamllint: Passed
+- mdformat: Passed
+
+Working tree status after run: clean (no auto-fixes needed)
